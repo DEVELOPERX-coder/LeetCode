@@ -1,0 +1,3 @@
+-Make a Seprate Folder for each Question
+-Example for leetcode question 1 make a folder Q1 in Shashank and upload your code there with a screen shot of its time and space complexity
+-Dont touch anyone else folder
