@@ -17,11 +17,41 @@ Q37 Sudoku Solver (Hard)
     <th>Header 1</th>
     <th>Header 2</th>
     <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
   </tr>
   <tr>
-    <td>Row 1 Col 1</td>
-    <td>Row 1 Col 2</td>
-    <td>Row 1 Col 3</td>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
   </tr>
   <!-- Add more rows as needed -->
 </table>
