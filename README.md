@@ -3,11 +3,11 @@ A place to solve leetcode question with efficiency and with your companions
 
 #### Goal for 6/June/2024 :
 
-<h6> Q1 Two Sum <p color="green">(Easy)</p></h6>
-<h6> Q11 Container with Most Water <p color="yellow">(Medium)</p></h6>
-<h6> Q4 Median of two Sorted Array <p color="red">(Hard)</p></h6>
+<h6> Q1 Two Sum <span style="color:green;">(Easy)</span></h6>
+<h6> Q11 Container with Most Water <span style="color:yellow;">(Medium)</span></h6>
+<h6> Q4 Median of two Sorted Array <span style="color:red;">(Hard)</span></h6>
 
-<table border="2" style="border-radius:5px">
+<table style="border-radius:5px;border:2;">
   <tr>
     <th>Rank</th>
     <th>Participants</th>
