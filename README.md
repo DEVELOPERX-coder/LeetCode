@@ -19,7 +19,7 @@ A place to solve leetcode question with efficiency and with your companions
   <tr>
     <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="25" height="25" align="left"> Sachin Rayal</center></th>
-    <td><center>0 &#10024;</center></td>
+    <td><center>9 &#10024;</center></td>
     <td>&#9989;</td>
     <td>&#9989;</td>
     <td>&#9989;</td>
@@ -27,7 +27,7 @@ A place to solve leetcode question with efficiency and with your companions
   <tr>
     <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="left"> Swapnil Fagedy</center></th>
-    <td><center>0 &#10024;</center></td>
+    <td><center>3 &#10024;</center></td>
     <td>&#9989;</td>
     <td>&#9989;</td>
     <td>&#9989;</td>
@@ -35,7 +35,7 @@ A place to solve leetcode question with efficiency and with your companions
   <tr>
     <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/79803871?s=64&v=4" width="25" height="25" align="left"> Kumar Ayush</center></th>
-    <td><center>0 &#10024;</center></td>
+    <td><center>6 &#10024;</center></td>
     <td>&#9989;</td>
     <td>&#9989;</td>
     <td>&#9989;</td>
