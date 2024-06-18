@@ -25,15 +25,7 @@ A place to solve leetcode question with efficiency and with your companions
     <td>&#9989;</td>
   </tr>
   <tr>
-    <th>1.</th>
-    <th><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="left"> Swapnil Fagedy</center></th>
-    <td><center>3 &#10024;</center></td>
-    <td>&#9989;</td>
-    <td>&#9989;</td>
-    <td>&#9989;</td>
-  </tr>
-  <tr>
-    <th>1.</th>
+    <th>2.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/79803871?s=64&v=4" width="25" height="25" align="left"> Kumar Ayush</center></th>
     <td><center>6 &#10024;</center></td>
     <td>&#9989;</td>
@@ -41,7 +33,15 @@ A place to solve leetcode question with efficiency and with your companions
     <td>&#9989;</td>
   </tr>
   <tr>
-    <th>1.</th>
+    <th>3.</th>
+    <th><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="left"> Swapnil Fagedy</center></th>
+    <td><center>3 &#10024;</center></td>
+    <td>&#9989;</td>
+    <td>&#9989;</td>
+    <td>&#9989;</td>
+  </tr>
+  <tr>
+    <th>4.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/73930171?s=64&v=4" width="25" height="25" align="left"> Shashank Shubham</center></th>
     <td><center>0 &#10024;</center></td>
     <td>&#9989;</td>
