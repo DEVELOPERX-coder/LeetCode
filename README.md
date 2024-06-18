@@ -1,5 +1,5 @@
 # LeetCode
-A place to solve leetcode question with efficiency
+A place to solve leetcode question with efficiency and with your companions
 
 Goal for 6/June/2024 :
 Q1 Two Sum (Easy)
@@ -17,21 +17,16 @@ Q37 Sudoku Solver (Hard)
     <th>Participants</th>
   </tr>
   <tr>
-    <th><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="50" height="50"> Sachin Rayal</th>
+    <th><center><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="25" height="25" align="center" style="border-radius:5px"> Sachin Rayal</center></th>
   </tr>
   <tr>
-    <th>Swapnil</th>
+    <th><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="center" style="border-radius:5px"> Swapnil Fagedy</center></th>
   </tr>
   <tr>
-    <th>Kumar Ayush</th>
+    <th><center><img src="https://avatars.githubusercontent.com/u/79803871?s=64&v=4" width="25" height="25" align="center" style="border-radius:5px"> Kumar Ayush</center></th>
   </tr>
   <tr>
-    <th>Shashank Shubhum</th>
+    <th><center><img src="https://avatars.githubusercontent.com/u/73930171?s=64&v=4" width="25" height="25" align="center" style="border-radius:5px"> Shashank Shubham</center></th>
   </tr>
-  <!-- Add more rows as needed -->
 </table>
 
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-|<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50" height="50" alt="LOGO" align="center"><br><center>Sachin Rayal</center> | Row 1 Col 2 | Row 1 Col 3 |
-| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
