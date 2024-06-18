@@ -3,7 +3,7 @@ A place to solve leetcode question with efficiency and with your companions
 
 #### Goal for 6/June/2024 :
 
-<span> Q1 Two Sum <span style="color:green;">(Easy)</span></span>
+<h6> Q1 Two Sum <span style="color:green;">(Easy)</span></h6>
 <h6> Q11 Container with Most Water <span style="color:yellow;">(Medium)</span></h6>
 <h6> Q4 Median of two Sorted Array <span style="color:red;">(Hard)</span></h6>
 
@@ -52,4 +52,5 @@ A place to solve leetcode question with efficiency and with your companions
 
 
 asd
+<h6 style="color: green;">Q1 Two Sum (Easy)</h6>
 
