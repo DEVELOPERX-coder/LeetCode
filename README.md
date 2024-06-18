@@ -7,8 +7,9 @@ A place to solve leetcode question with efficiency and with your companions
 ### Q11 Container with Most Water <span color="yellow">(Medium)</span>
 ### Q4 Median of two Sorted Array <span color="red">(Hard)</span>
 
-<table border="1">
+<table border="2" border-radius="5px">
   <tr>
+    <th>Rank</th>
     <th>Participants</th>
     <th>Points</th>
     <th>Q1</th>
@@ -16,6 +17,7 @@ A place to solve leetcode question with efficiency and with your companions
     <th>Q4</th>
   </tr>
   <tr>
+    <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="25" height="25" align="left" style="border-radius:10px"> Sachin Rayal</center></th>
     <td><center>0 &#10024;</center></td>
     <td>&#9989;</td>
@@ -23,6 +25,7 @@ A place to solve leetcode question with efficiency and with your companions
     <td>&#9989;</td>
   </tr>
   <tr>
+    <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Swapnil Fagedy</center></th>
     <td><center>0 &#10024;</center></td>
     <td>&#9989;</td>
@@ -30,6 +33,7 @@ A place to solve leetcode question with efficiency and with your companions
     <td>&#9989;</td>
   </tr>
   <tr>
+    <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/79803871?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Kumar Ayush</center></th>
     <td><center>0 &#10024;</center></td>
     <td>&#9989;</td>
@@ -37,6 +41,7 @@ A place to solve leetcode question with efficiency and with your companions
     <td>&#9989;</td>
   </tr>
   <tr>
+    <th>1.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/73930171?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Shashank Shubham</center></th>
     <td><center>0 &#10024;</center></td>
     <td>&#9989;</td>
