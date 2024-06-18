@@ -19,24 +19,24 @@ Q37 Sudoku Solver (Hard)
     <th>Q1</th>
   </tr>
   <tr>
-    <tb><center><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="25" height="25" align="left" style="border-radius:10px"> Sachin Rayal</center></tb>
-    <tb><center>0 &#10024;</center></tb>
-    <tb>&#9989;</tb>
+    <th><center><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="25" height="25" align="left" style="border-radius:10px"> Sachin Rayal</center></th>
+    <td><center>0 &#10024;</center></td>
+    <td>&#9989;</td>
   </tr>
   <tr>
-    <tb><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Swapnil Fagedy</center></tb>
-    <tb><center>0 &#10024;</center></tb>
-    <tb>&#9989;</tb>
+    <th><center><img src="https://avatars.githubusercontent.com/u/143727207?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Swapnil Fagedy</center></th>
+    <td><center>0 &#10024;</center></td>
+    <td>&#9989;</td>
   </tr>
   <tr>
-    <tb><center><img src="https://avatars.githubusercontent.com/u/79803871?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Kumar Ayush</center></tb>
-    <tb><center>0 &#10024;</center></tb>
-    <tb>&#9989;</tb>
+    <th><center><img src="https://avatars.githubusercontent.com/u/79803871?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Kumar Ayush</center></th>
+    <td><center>0 &#10024;</center></td>
+    <td>&#9989;</td>
   </tr>
   <tr>
-    <tb><center><img src="https://avatars.githubusercontent.com/u/73930171?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Shashank Shubham</center></tb>
-    <tb><center>0 &#10024;</center></tb>
-    <tb>&#9989;</tb>
+    <th><center><img src="https://avatars.githubusercontent.com/u/73930171?s=64&v=4" width="25" height="25" align="left" style="border-radius:5px"> Shashank Shubham</center></th>
+    <td><center>0 &#10024;</center></td>
+    <td>&#9989;</td>
   </tr>
 </table>
 
