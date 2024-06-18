@@ -7,7 +7,7 @@ A place to solve leetcode question with efficiency and with your companions
 ### Q11 Container with Most Water <span color="yellow">(Medium)</span>
 ### Q4 Median of two Sorted Array <span color="red">(Hard)</span>
 
-<table border="2" border-radius="5px">
+<table border="2" style="border-radius:5px">
   <tr>
     <th>Rank</th>
     <th>Participants</th>
