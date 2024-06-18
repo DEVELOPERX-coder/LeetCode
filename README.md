@@ -11,3 +11,17 @@ Goal for 7/june/2024 :
 Q26 Remove Duplicates from Sorted Array (Easy)
 Q15 3Sum (Medium)
 Q37 Sudoku Solver (Hard)
+
+<table border="1">
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td>Row 1 Col 1</td>
+    <td>Row 1 Col 2</td>
+    <td>Row 1 Col 3</td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
