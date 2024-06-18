@@ -33,5 +33,5 @@ Q37 Sudoku Solver (Hard)
 
 | Header 1 | Header 2 | Header 3 |
 |----------|----------|----------|
-|<center> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50" height="50" alt="LOGO" align="center"><br>Sachin Rayal</center> | Row 1 Col 2 | Row 1 Col 3 |
+|<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50" height="50" alt="LOGO" align="center"><br><center>Sachin Rayal</center> | Row 1 Col 2 | Row 1 Col 3 |
 | Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
