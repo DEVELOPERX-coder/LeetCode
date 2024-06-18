@@ -17,7 +17,7 @@ Q37 Sudoku Solver (Hard)
     <th>Participants</th>
   </tr>
   <tr>
-    <th>Sachin Rayal</th>
+    <th><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="50" height="50"> Sachin Rayal</th>
   </tr>
   <tr>
     <th>Swapnil</th>
