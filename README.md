@@ -14,44 +14,24 @@ Q37 Sudoku Solver (Hard)
 
 <table border="1">
   <tr>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
+    <th>Participants</th>
   </tr>
   <tr>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
-    <th>Header 1</th>
-    <th>Header 2</th>
-    <th>Header 3</th>
+    <th>Sachin Rayal</th>
+  </tr>
+  <tr>
+    <th>Swapnil</th>
+  </tr>
+  <tr>
+    <th>Kumar Ayush</th>
+  </tr>
+  <tr>
+    <th>Shashank Shubhum</th>
   </tr>
   <!-- Add more rows as needed -->
 </table>
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| ![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
