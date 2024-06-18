@@ -20,7 +20,7 @@ Q37 Sudoku Solver (Hard)
   </tr>
   <tr>
     <th><center><img src="https://avatars.githubusercontent.com/u/66353809?s=64&v=4" width="25" height="25" align="left" style="border-radius:10px"> Sachin Rayal</center></th>
-    <tb><center>0 &#10024;</center></tb>
+    <th><center>0 &#10024;</center></th>
     <tb>&#9989;</tb>
   </tr>
   <tr>
