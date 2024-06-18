@@ -38,14 +38,14 @@ A place to solve leetcode question with efficiency and with your companions
     <td><center>3 &#10024;</center></td>
     <td>&#9989;</td>
     <td>&#9989;</td>
-    <td>&#9989;</td>
+    <td></td>
   </tr>
   <tr>
     <th>4.</th>
     <th><center><img src="https://avatars.githubusercontent.com/u/73930171?s=64&v=4" width="25" height="25" align="left"> Shashank Shubham</center></th>
     <td><center>0 &#10024;</center></td>
     <td>&#9989;</td>
-    <td>&#9989;</td>
+    <td></td>
     <td>&#9989;</td>
   </tr>
 </table>
