@@ -1,0 +1,130 @@
+/**
+ * Custom dark theme for Prism.js (based on Atom Dark)
+ * Modified to match our neon theme
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: "Fira Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+  font-size: 0.9em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+  color: #abb2bf;
+  background: #0f0f11;
+  border-radius: 8px;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  white-space: normal;
+  background: #1d1e24;
+  color: #abb2bf;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5c6370;
+}
+
+.token.punctuation {
+  color: #abb2bf;
+}
+
+.token.selector,
+.token.tag {
+  color: #ff5595; /* Neon pink */
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+  color: #d19a66;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted {
+  color: #36e2bd; /* Neon green */
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #56b6c2;
+}
+
+.token.atrule,
+.token.keyword {
+  color: #3a80ff; /* Neon blue */
+}
+
+.token.function,
+.token.class-name {
+  color: #845aff; /* Neon purple */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e06c75;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Line highlight */
+.line-highlight {
+  background: rgba(58, 128, 255, 0.1);
+  border-left: 3px solid rgba(58, 128, 255, 0.5);
+}
+
+/* Line numbers */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.line-numbers-rows > span:before {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Match braces */
+.token.punctuation.brace-hover,
+.token.punctuation.brace-selected {
+  outline: solid 1px;
+}
