@@ -529,9 +529,6 @@ bool hasPairWithSum(std::vector<int>& arr, int targetSum) {
                     </div>
                 </div>
                 
-                <!-- Additional topic cards would be added here -->
-                <!-- For brevity, I'm only including the first two detailed topics -->
-                
                 <!-- Topic 3: Linked Lists -->
                 <div class="topic-card" id="linked-lists">
                     <div class="topic-icon">
@@ -557,7 +554,389 @@ bool hasPairWithSum(std::vector<int>& arr, int targetSum) {
                         Expand <i class="fas fa-chevron-down"></i>
                     </button>
                     <div id="linked-lists-content" class="topic-expanded-content">
-                        <!-- Content would go here -->
+                        <div class="content-tabs">
+                          <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-overview-3">Overview</button>
+                            <button class="tab-btn" data-tab="tab-lessons-3">Lessons</button>
+                            <button class="tab-btn" data-tab="tab-practice-3">Practice</button>
+                            <button class="tab-btn" data-tab="tab-resources-3">Resources</button>
+                          </div>
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="tab-overview-3">
+                              <h4>Linked Lists: Dynamic Data Structures</h4>
+                              <p>Linked lists are linear data structures where elements are stored in nodes, and each node points to the next node in the sequence. Unlike arrays, linked lists don't require contiguous memory allocation, making insertions and deletions more efficient.</p>
+                              
+                              <div class="concept-diagram">
+                                <h5>Linked List Structure</h5>
+                                <svg width="100%" height="120" viewBox="0 0 600 120">
+                                  <!-- Node 1 -->
+                                  <rect x="20" y="30" width="120" height="60" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                  <text x="45" y="60" fill="#f5f5f7" font-family="monospace">Data: 10</text>
+                                  <text x="45" y="80" fill="#a0a0a5" font-family="monospace">Next: →</text>
+                                  
+                                  <!-- Arrow 1 -->
+                                  <path d="M 145 60 L 175 60" stroke="#3a80ff" stroke-width="2" />
+                                  <polygon points="175,55 185,60 175,65" fill="#3a80ff" />
+                                  
+                                  <!-- Node 2 -->
+                                  <rect x="190" y="30" width="120" height="60" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                  <text x="215" y="60" fill="#f5f5f7" font-family="monospace">Data: 20</text>
+                                  <text x="215" y="80" fill="#a0a0a5" font-family="monospace">Next: →</text>
+                                  
+                                  <!-- Arrow 2 -->
+                                  <path d="M 315 60 L 345 60" stroke="#3a80ff" stroke-width="2" />
+                                  <polygon points="345,55 355,60 345,65" fill="#3a80ff" />
+                                  
+                                  <!-- Node 3 -->
+                                  <rect x="360" y="30" width="120" height="60" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                  <text x="385" y="60" fill="#f5f5f7" font-family="monospace">Data: 30</text>
+                                  <text x="385" y="80" fill="#a0a0a5" font-family="monospace">Next: →</text>
+                                  
+                                  <!-- NULL pointer -->
+                                  <path d="M 485 60 L 515 60" stroke="#3a80ff" stroke-width="2" />
+                                  <text x="525" y="65" fill="#a0a0a5" font-family="monospace">NULL</text>
+                                </svg>
+                              </div>
+                              
+                              <h4>Key Concepts</h4>
+                              <ul>
+                                <li><strong>Node Structure</strong>: Each node contains data and a reference to the next node</li>
+                                <li><strong>Singly vs Doubly</strong>: Singly linked lists have only next pointers, while doubly linked lists have both next and previous pointers</li>
+                                <li><strong>Operations</strong>: Insertion, deletion, traversal, searching</li>
+                                <li><strong>Fast & Slow Pointers</strong>: A technique to solve many linked list problems</li>
+                              </ul>
+                              
+                              <div class="code-example">
+<pre><code class="language-cpp">// Singly Linked List Node in C++
+struct Node {
+    int data;        // Data stored in the node
+    Node* next;      // Pointer to the next node
+    
+    // Constructor for easy node creation
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+// Creating a simple linked list with 3 nodes
+Node* createLinkedList() {
+    // Create nodes
+    Node* head = new Node(10);
+    Node* second = new Node(20);
+    Node* third = new Node(30);
+    
+    // Connect nodes
+    head->next = second;
+    second->next = third;
+    // third->next is already nullptr from constructor
+    
+    return head;
+}
+
+// Function to traverse and print a linked list
+void printList(Node* head) {
+    Node* current = head;
+    while (current != nullptr) {
+        cout << current->data << " -> ";
+        current = current->next;
+    }
+    cout << "nullptr" << endl;
+}</code></pre>
+                              </div>
+                              
+                              <h4>Advantages and Disadvantages</h4>
+                              <div class="comparison-table">
+                                <div class="comparison-column">
+                                  <h5>Advantages</h5>
+                                  <ul>
+                                    <li>Dynamic size (grows/shrinks at runtime)</li>
+                                    <li>Efficient insertions and deletions (O(1) if position is known)</li>
+                                    <li>No need for contiguous memory allocation</li>
+                                    <li>Can be easily implemented for stacks and queues</li>
+                                  </ul>
+                                </div>
+                                <div class="comparison-column">
+                                  <h5>Disadvantages</h5>
+                                  <ul>
+                                    <li>No random access (O(n) to access arbitrary elements)</li>
+                                    <li>Extra memory for storing pointers</li>
+                                    <li>Not cache-friendly due to non-contiguous memory</li>
+                                    <li>Requires pointers, making it more complex than arrays</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="tab-lessons-3">
+                              <div class="lessons-list">
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>Singly Linked List Implementation</h4>
+                                    <span class="lesson-duration">60 min</span>
+                                  </div>
+                                  <p>Learn to implement a complete singly linked list with all basic operations.</p>
+                                  
+                                  <div class="lesson-content">
+                                    <h5>Basic Operations</h5>
+                                    <div class="code-example">
+<pre><code class="language-cpp">class SinglyLinkedList {
+private:
+    Node* head;
+    
+public:
+    // Constructor
+    SinglyLinkedList() : head(nullptr) {}
+    
+    // Insert at beginning - O(1)
+    void insertAtBeginning(int val) {
+        Node* newNode = new Node(val);
+        newNode->next = head;
+        head = newNode;
+    }
+    
+    // Insert at end - O(n)
+    void insertAtEnd(int val) {
+        Node* newNode = new Node(val);
+        
+        // If list is empty
+        if (head == nullptr) {
+            head = newNode;
+            return;
+        }
+        
+        // Find the last node
+        Node* current = head;
+        while (current->next != nullptr) {
+            current = current->next;
+        }
+        
+        // Link the last node to new node
+        current->next = newNode;
+    }
+    
+    // Delete a node with given value - O(n)
+    void deleteNode(int key) {
+        // If list is empty
+        if (head == nullptr) return;
+        
+        // If head has the key
+        if (head->data == key) {
+            Node* temp = head;
+            head = head->next;
+            delete temp;
+            return;
+        }
+        
+        // Find the node before the one to be deleted
+        Node* current = head;
+        while (current->next != nullptr && current->next->data != key) {
+            current = current->next;
+        }
+        
+        // If key not found
+        if (current->next == nullptr) {
+            return;
+        }
+        
+        // Delete the node
+        Node* temp = current->next;
+        current->next = current->next->next;
+        delete temp;
+    }
+}</code></pre>
+                                    </div>
+                                    
+                                    <div class="operation-visual">
+                                      <h6>Insertion at Beginning</h6>
+                                      <svg width="100%" height="160" viewBox="0 0 600 160">
+                                        <!-- Before state -->
+                                        <text x="20" y="20" fill="#a0a0a5">Before:</text>
+                                        <text x="20" y="40" fill="#f5f5f7">head</text>
+                                        <path d="M 50 40 L 80 40" stroke="#3a80ff" stroke-width="2" />
+                                        <polygon points="80,35 90,40 80,45" fill="#3a80ff" />
+                                        
+                                        <rect x="100" y="20" width="80" height="40" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                        <text x="140" y="45" text-anchor="middle" fill="#f5f5f7" font-family="monospace">10</text>
+                                        
+                                        <path d="M 185 40 L 215 40" stroke="#3a80ff" stroke-width="2" />
+                                        <polygon points="215,35 225,40 215,45" fill="#3a80ff" />
+                                        
+                                        <rect x="230" y="20" width="80" height="40" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                        <text x="270" y="45" text-anchor="middle" fill="#f5f5f7" font-family="monospace">20</text>
+                                        
+                                        <path d="M 315 40 L 345 40" stroke="#3a80ff" stroke-width="2" />
+                                        <text x="360" y="45" fill="#a0a0a5" font-family="monospace">NULL</text>
+                                        
+                                        <!-- After state -->
+                                        <text x="20" y="100" fill="#a0a0a5">After insertAtBeginning(5):</text>
+                                        <text x="20" y="120" fill="#f5f5f7">head</text>
+                                        <path d="M 50 120 L 80 120" stroke="#3a80ff" stroke-width="2" />
+                                        <polygon points="80,115 90,120 80,125" fill="#3a80ff" />
+                                        
+                                        <rect x="100" y="100" width="80" height="40" rx="5" fill="#16171b" stroke="#845aff" stroke-width="2" />
+                                        <text x="140" y="125" text-anchor="middle" fill="#f5f5f7" font-family="monospace">5</text>
+                                        
+                                        <path d="M 185 120 L 215 120" stroke="#3a80ff" stroke-width="2" />
+                                        <polygon points="215,115 225,120 215,125" fill="#3a80ff" />
+                                        
+                                        <rect x="230" y="100" width="80" height="40" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                        <text x="270" y="125" text-anchor="middle" fill="#f5f5f7" font-family="monospace">10</text>
+                                        
+                                        <path d="M 315 120 L 345 120" stroke="#3a80ff" stroke-width="2" />
+                                        <polygon points="345,115 355,120 345,125" fill="#3a80ff" />
+                                        
+                                        <rect x="360" y="100" width="80" height="40" rx="5" fill="#16171b" stroke="#3a80ff" stroke-width="2" />
+                                        <text x="400" y="125" text-anchor="middle" fill="#f5f5f7" font-family="monospace">20</text>
+                                        
+                                        <path d="M 445 120 L 475 120" stroke="#3a80ff" stroke-width="2" />
+                                        <text x="490" y="125" fill="#a0a0a5" font-family="monospace">NULL</text>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>Doubly Linked List Implementation</h4>
+                                    <span class="lesson-duration">60 min</span>
+                                  </div>
+                                  <p>Learn to implement a doubly linked list with bidirectional traversal capability.</p>
+                                </div>
+                                
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>Linked List Problem Patterns</h4>
+                                    <span class="lesson-duration">90 min</span>
+                                  </div>
+                                  <p>Master common patterns for solving linked list problems, including fast & slow pointers, reversing, and cycle detection.</p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="tab-practice-3">
+                              <div class="practice-problems">
+                                <h4>LeetCode Problems</h4>
+                                <div class="difficulty-tabs">
+                                  <button class="difficulty-tab active" data-difficulty="easy">Easy</button>
+                                  <button class="difficulty-tab" data-difficulty="medium">Medium</button>
+                                  <button class="difficulty-tab" data-difficulty="hard">Hard</button>
+                                </div>
+                                
+                                <div class="difficulty-content active" id="easy-problems">
+                                  <div class="problem-list">
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">206. Reverse Linked List</a></h5>
+                                        <span class="difficulty easy">Easy</span>
+                                      </div>
+                                      <p>Reverse a singly linked list.</p>
+                                      <div class="problem-approach">
+                                        <h6>Approach:</h6>
+                                        <p>Use three pointers (prev, current, next) to reverse links one by one.</p>
+                                        <div class="code-example">
+<pre><code class="language-cpp">Node* reverseList(Node* head) {
+    Node* prev = nullptr;
+    Node* current = head;
+    Node* next = nullptr;
+    
+    while (current != nullptr) {
+        // Store next
+        next = current->next;
+        
+        // Reverse current node's pointer
+        current->next = prev;
+        
+        // Move pointers one position ahead
+        prev = current;
+        current = next;
+    }
+    
+    // New head is the previous last node
+    return prev;
+}</code></pre>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">21. Merge Two Sorted Lists</a></h5>
+                                        <span class="difficulty easy">Easy</span>
+                                      </div>
+                                      <p>Merge two sorted linked lists into a single sorted linked list.</p>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank">141. Linked List Cycle</a></h5>
+                                        <span class="difficulty easy">Easy</span>
+                                      </div>
+                                      <p>Determine if a linked list has a cycle.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="difficulty-content" id="medium-problems">
+                                  <div class="problem-list">
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/add-two-numbers/" target="_blank">2. Add Two Numbers</a></h5>
+                                        <span class="difficulty medium">Medium</span>
+                                      </div>
+                                      <p>Add two numbers represented by linked lists.</p>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank">19. Remove Nth Node From End of List</a></h5>
+                                        <span class="difficulty medium">Medium</span>
+                                      </div>
+                                      <p>Remove the nth node from the end of a linked list.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="difficulty-content" id="hard-problems">
+                                  <div class="problem-list">
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank">23. Merge k Sorted Lists</a></h5>
+                                        <span class="difficulty hard">Hard</span>
+                                      </div>
+                                      <p>Merge k sorted linked lists into one sorted linked list.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="tab-resources-3">
+                              <div class="resources-list">
+                                <div class="resource-item">
+                                  <h5>Linked List Visualizer</h5>
+                                  <p>Interactive visualization of linked list operations</p>
+                                  <a href="https://visualgo.net/en/list" target="_blank" class="resource-link">
+                                    Visit Resource <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                                </div>
+                                
+                                <div class="resource-item">
+                                  <h5>Stanford CS Library: Linked List Basics</h5>
+                                  <p>Comprehensive explanation of linked list fundamentals</p>
+                                  <a href="http://cslibrary.stanford.edu/103/" target="_blank" class="resource-link">
+                                    Visit Resource <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                                </div>
+                                
+                                <div class="resource-item">
+                                  <h5>GeeksforGeeks: Linked List Data Structure</h5>
+                                  <p>Collection of articles and problems related to linked lists</p>
+                                  <a href="https://www.geeksforgeeks.org/data-structures/linked-list/" target="_blank" class="resource-link">
+                                    Visit Resource <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -568,239 +947,852 @@ bool hasPairWithSum(std::vector<int>& arr, int targetSum) {
                     </div>
                     <h3 class="topic-title">Stacks & Queues</h3>
                     <p class="topic-description">LIFO and FIFO data structures and their applications in algorithm design.</p>
-                    <!-- Stats and expand button would go here -->
+                    <div class="topic-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">6</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <button class="btn expand-btn" data-target="stacks-queues-content">
+                        Expand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="stacks-queues-content" class="topic-expanded-content">
+                        <!-- Content will be added here -->
+                    </div>
                 </div>
                 
-                <!-- Add more topic cards for the remaining topics -->
+                <!-- Topic 5: Recursion & Sorting -->
+                <div class="topic-card" id="recursion">
+                    <div class="topic-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="topic-title">Recursion & Sorting</h3>
+                    <p class="topic-description">Master recursive thinking and fundamental sorting algorithms.</p>
+                    <div class="topic-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">9</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">18</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <button class="btn expand-btn" data-target="recursion-content">
+                        Expand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="recursion-content" class="topic-expanded-content">
+                        <!-- Content will be added here -->
+                        
+                        <!-- Sorting Algorithm Visualizer -->
+                        <div class="algorithm-player">
+                          <h4>Sorting Algorithm Visualizer</h4>
+                          <div class="algorithm-controls">
+                            <select id="algorithm-select">
+                              <option value="bubble">Bubble Sort</option>
+                              <option value="selection">Selection Sort</option>
+                              <option value="insertion">Insertion Sort</option>
+                              <option value="merge">Merge Sort</option>
+                              <option value="quick">Quick Sort</option>
+                            </select>
+                            <button id="generate-array">Generate Random Array</button>
+                            <button id="start-sorting">Start Sorting</button>
+                            <button id="reset-array">Reset</button>
+                            <div class="speed-control">
+                              <label for="sorting-speed">Speed:</label>
+                              <input type="range" id="sorting-speed" min="1" max="100" value="50">
+                            </div>
+                          </div>
+                          
+                          <div class="array-container">
+                            <div id="array-bars"></div>
+                          </div>
+                          
+                          <div class="algorithm-info">
+                            <div class="complexity-info">
+                              <p><strong>Time Complexity:</strong> <span id="time-complexity">O(n²)</span></p>
+                              <p><strong>Space Complexity:</strong> <span id="space-complexity">O(1)</span></p>
+                            </div>
+                            <p id="algorithm-description">Bubble Sort repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
                 
-            </div>
-        </div>
-    </section>
+                <!-- Topic 6: Searching & Hashing -->
+                <div class="topic-card" id="searching">
+                    <div class="topic-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="topic-title">Searching & Hashing</h3>
+                    <p class="topic-description">Efficient techniques for finding elements and optimizing lookups.</p>
+                    <div class="topic-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">10</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <button class="btn expand-btn" data-target="searching-content">
+                        Expand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="searching-content" class="topic-expanded-content">
+                        <!-- Content will be added here -->
+                    </div>
+                </div>
+                
+                <!-- Topic 7: Trees -->
+                <div class="topic-card" id="trees">
+                    <div class="topic-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="topic-title">Trees & Binary Search Trees</h3>
+                    <p class="topic-description">Hierarchical data structures for efficient search, insertion, and deletion.</p>
+                    <div class="topic-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">10</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">20</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3-4</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <button class="btn expand-btn" data-target="trees-content">
+                        Expand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="trees-content" class="topic-expanded-content">
+                        <!-- Content will be added here -->
+                        
+                        <!-- BST Visualization -->
+                        <div class="visualization-container">
+                          <h4>Binary Search Tree Visualization</h4>
+                          <div class="visualization-controls">
+                            <button class="viz-btn" id="bst-insert">Insert Node</button>
+                            <button class="viz-btn" id="bst-delete">Delete Node</button>
+                            <button class="viz-btn" id="bst-search">Search</button>
+                            <input type="number" id="bst-value" placeholder="Enter value" min="1" max="99">
+                          </div>
+                          
+                          <div class="bst-visualization">
+                            <!-- SVG will be dynamically generated by JavaScript -->
+                            <svg id="bst-svg" width="100%" height="400" viewBox="0 0 800 400"></svg>
+                          </div>
+                          
+                          <div class="visualization-info">
+                            <p id="bst-message">Click "Insert Node" to add nodes to the tree.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Topic 8: Graphs -->
+                <div class="topic-card" id="graphs">
+                    <div class="topic-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="topic-title">Graphs & Graph Algorithms</h3>
+                    <p class="topic-description">Complex networks, traversals, and optimization algorithms.</p>
+                    <div class="topic-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">8</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">15</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3-4</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <button class="btn expand-btn" data-target="graphs-content">
+                        Expand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="graphs-content" class="topic-expanded-content">
+                        <!-- Content will be added here -->
+                    </div>
+                </div>
+                
+                <!-- Topic 9: Dynamic Programming -->
+                <div class="topic-card" id="dp">
+                    <div class="topic-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3 class="topic-title">Dynamic Programming</h3>
+                    <p class="topic-description">Solving complex problems by breaking them down into overlapping subproblems.</p>
+                    <div class="topic-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Lessons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">25</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">4-5</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <button class="btn expand-btn" data-target="dp-content">
+                        Expand <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="dp-content" class="topic-expanded-content">
+                        <div class="content-tabs">
+                          <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-overview-8">Overview</button>
+                            <button class="tab-btn" data-tab="tab-lessons-8">Lessons</button>
+                            <button class="tab-btn" data-tab="tab-practice-8">Practice</button>
+                            <button class="tab-btn" data-tab="tab-resources-8">Resources</button>
+                          </div>
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="tab-overview-8">
+                              <h4>Dynamic Programming: Breaking Down Complex Problems</h4>
+                              <p>Dynamic Programming (DP) is a powerful technique for solving problems by breaking them down into overlapping subproblems. By storing solutions to subproblems, DP avoids redundant calculations and improves efficiency.</p>
+                              
+                              <div class="key-principles">
+                                <h5>Two Key Principles of Dynamic Programming</h5>
+                                <div class="principle-cards">
+                                  <div class="principle-card">
+                                    <div class="principle-header">
+                                      <i class="fas fa-puzzle-piece"></i>
+                                      <h6>1. Optimal Substructure</h6>
+                                    </div>
+                                    <p>The optimal solution to a problem can be constructed from optimal solutions of its subproblems.</p>
+                                  </div>
+                                  <div class="principle-card">
+                                    <div class="principle-header">
+                                      <i class="fas fa-clone"></i>
+                                      <h6>2. Overlapping Subproblems</h6>
+                                    </div>
+                                    <p>The problem can be broken down into subproblems that are reused multiple times.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <h4>Approaches to Dynamic Programming</h4>
+                              
+                              <div class="dp-approaches">
+                                <div class="dp-approach">
+                                  <h5>Top-Down Approach (Memoization)</h5>
+                                  <p>Start with the original problem and recursively break it down into subproblems, storing results to avoid recalculation.</p>
+                                  
+                                  <div class="code-example">
+<pre><code class="language-cpp">// Fibonacci using memoization (top-down DP)
+int fibMemo(int n, vector<int>& memo) {
+    // Base cases
+    if (n <= 1) return n;
+    
+    // Check if already computed
+    if (memo[n] != -1) return memo[n];
+    
+    // Calculate and store result
+    memo[n] = fibMemo(n - 1, memo) + fibMemo(n - 2, memo);
+    return memo[n];
+}
 
-    <section id="progress" class="progress-section">
-        <div class="container">
-            <h2 class="section-title">Progress <span class="accent-text">Tracker</span></h2>
-            <p class="section-description">Track your DSA learning journey</p>
-            
-            <div class="progress-container">
-                <div class="progress-stats">
-                    <div class="stat-card">
-                        <div class="stat-header">
-                            <i class="fas fa-book-open"></i>
-                            <h3>Topics Completed</h3>
-                        </div>
-                        <div class="stat-value">
-                            <span id="topics-completed">0</span>/<span id="total-topics">10</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Problems Solved</h3>
-                        </div>
-                        <div class="stat-value">
-                            <span id="problems-solved">0</span>/<span id="total-problems">150</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-header">
-                            <i class="fas fa-calendar-alt"></i>
-                            <h3>Estimated Time</h3>
-                        </div>
-                        <div class="stat-value">
-                            <span id="weeks-completed">0</span>/<span id="total-weeks">30</span> weeks
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 0%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="checklist-container">
-                    <h3>Topic Checklist</h3>
-                    <div class="topic-checklist">
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-cpp-basics" class="topic-checkbox">
-                            <label for="check-cpp-basics">C++ Basics & Fundamentals</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-arrays" class="topic-checkbox">
-                            <label for="check-arrays">Arrays & Vectors</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-linked-lists" class="topic-checkbox">
-                            <label for="check-linked-lists">Linked Lists</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-stacks-queues" class="topic-checkbox">
-                            <label for="check-stacks-queues">Stacks & Queues</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-recursion" class="topic-checkbox">
-                            <label for="check-recursion">Recursion & Sorting</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-searching" class="topic-checkbox">
-                            <label for="check-searching">Searching & Hashing</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-trees" class="topic-checkbox">
-                            <label for="check-trees">Trees & BST</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-graphs" class="topic-checkbox">
-                            <label for="check-graphs">Graphs</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-dp" class="topic-checkbox">
-                            <label for="check-dp">Dynamic Programming</label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="check-advanced" class="topic-checkbox">
-                            <label for="check-advanced">Advanced Topics</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+int fibonacci(int n) {
+    vector<int> memo(n + 1, -1);
+    return fibMemo(n, memo);
+}</code></pre>
+                                  </div>
+                                </div>
+                                
+                                <div class="dp-approach">
+                                  <h5>Bottom-Up Approach (Tabulation)</h5>
+                                  <p>Start with the smallest subproblems and build up to the original problem, filling a table of results.</p>
+                                  
+                                  <div class="code-example">
+<pre><code class="language-cpp">// Fibonacci using tabulation (bottom-up DP)
+int fibTabulation(int n) {
+    // Base cases
+    if (n <= 1) return n;
+    
+    // Create and initialize DP table
+    vector<int> dp(n + 1);
+    dp[0] = 0;
+    dp[1] = 1;
+    
+    // Fill table bottom-up
+    for (int i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    
+    return dp[n];
+}</code></pre>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <h4>Common DP Problem Types</h4>
+                              <div class="problem-types">
+                                <div class="problem-type">
+                                  <h5>1. Optimization Problems</h5>
+                                  <ul>
+                                    <li>Knapsack Problem</li>
+                                    <li>Longest Common Subsequence</li>
+                                    <li>Longest Increasing Subsequence</li>
+                                    <li>Coin Change (minimum coins)</li>
+                                  </ul>
+                                </div>
+                                
+                                <div class="problem-type">
+                                  <h5>2. Counting Problems</h5>
+                                  <ul>
+                                    <li>Ways to reach a destination</li>
+                                    <li>Ways to count change</li>
+                                    <li>Number of distinct subsequences</li>
+                                    <li>Number of ways to decode a message</li>
+                                  </ul>
+                                </div>
+                                
+                                <div class="problem-type">
+                                  <h5>3. Path Problems</h5>
+                                  <ul>
+                                    <li>Minimum/Maximum Path Sum</li>
+                                    <li>Unique Paths in a Grid</li>
+                                    <li>Edit Distance</li>
+                                    <li>Shortest/Longest Common Supersequence</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              
+                              <div class="visual-example">
+                                <h5>Visual Example: Climbing Stairs Problem</h5>
+                                <p>How many distinct ways can you climb n stairs if you can take 1 or 2 steps at a time?</p>
+                                
+                                <div class="climbing-stairs-visual">
+                                  <svg width="100%" height="250" viewBox="0 0 800 250">
+                                    <!-- DP Table visualization -->
+                                    <rect x="100" y="20" width="600" height="60" fill="none" stroke="#3a80ff" stroke-width="1" />
+                                    
+                                    <!-- Table headers -->
+                                    <text x="130" y="15" text-anchor="middle" fill="#a0a0a5">n=0</text>
+                                    <text x="190" y="15" text-anchor="middle" fill="#a0a0a5">n=1</text>
+                                    <text x="250" y="15" text-anchor="middle" fill="#a0a0a5">n=2</text>
+                                    <text x="310" y="15" text-anchor="middle" fill="#a0a0a5">n=3</text>
+                                    <text x="370" y="15" text-anchor="middle" fill="#a0a0a5">n=4</text>
+                                    <text x="430" y="15" text-anchor="middle" fill="#a0a0a5">n=5</text>
+                                    <text x="490" y="15" text-anchor="middle" fill="#a0a0a5">n=6</text>
+                                    
+                                    <!-- Table cells -->
+                                    <rect x="100" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="130" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">1</text>
+                                    
+                                    <rect x="160" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="190" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">1</text>
+                                    
+                                    <rect x="220" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="250" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">2</text>
+                                    
+                                    <rect x="280" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="310" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">3</text>
+                                    
+                                    <rect x="340" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="370" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">5</text>
+                                    
+                                    <rect x="400" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="430" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">8</text>
+                                    
+                                    <rect x="460" y="20" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" />
+                                    <text x="490" y="55" text-anchor="middle" fill="#f5f5f7" font-size="18">13</text>
+                                    
+                                    <!-- Calculation visualization for n=5 -->
+                                    <text x="150" y="120" fill="#f5f5f7" font-size="16">Calculation for dp[5]:</text>
+                                    
+                                    <rect x="200" y="140" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" rx="5" />
+                                    <text x="230" y="175" text-anchor="middle" fill="#f5f5f7" font-size="18">dp[4]</text>
+                                    <text x="230" y="195" text-anchor="middle" fill="#a0a0a5" font-size="14">= 5</text>
+                                    
+                                    <text x="280" y="175" text-anchor="middle" fill="#f5f5f7" font-size="24">+</text>
+                                    
+                                    <rect x="300" y="140" width="60" height="60" fill="#16171b" stroke="#3a80ff" stroke-width="1" rx="5" />
+                                    <text x="330" y="175" text-anchor="middle" fill="#f5f5f7" font-size="18">dp[3]</text>
+                                    <text x="330" y="195" text-anchor="middle" fill="#a0a0a5" font-size="14">= 3</text>
+                                    
+                                    <text x="380" y="175" text-anchor="middle" fill="#f5f5f7" font-size="24">=</text>
+                                    
+                                    <rect x="400" y="140" width="60" height="60" fill="#16171b" stroke="#845aff" stroke-width="2" rx="5" />
+                                    <text x="430" y="175" text-anchor="middle" fill="#f5f5f7" font-size="18">dp[5]</text>
+                                    <text x="430" y="195" text-anchor="middle" fill="#f5f5f7" font-size="14">= 8</text>
+                                  </svg>
+                                </div>
+                                
+                                <div class="code-example">
+<pre><code class="language-cpp">// Dynamic Programming solution for Climbing Stairs
+int climbStairs(int n) {
+    if (n <= 2) return n;
+    
+    // Create DP table
+    vector<int> dp(n + 1);
+    
+    // Base cases
+    dp[0] = 1;  // One way to climb 0 stairs (stay where you are)
+    dp[1] = 1;  // One way to climb 1 stair (take one step)
+    
+    // Fill the table bottom-up
+    for (int i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    
+    return dp[n];
+}</code></pre>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Lessons tab -->
+                            <div class="tab-pane" id="tab-lessons-8">
+                              <div class="lessons-list">
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>DP Fundamentals: Memoization vs Tabulation</h4>
+                                    <span class="lesson-duration">75 min</span>
+                                  </div>
+                                  <p>Learn the two main approaches to dynamic programming and when to use each.</p>
+                                  
+                                  <div class="lesson-content">
+                                    <h5>Approach Comparison</h5>
+                                    <div class="comparison-table">
+                                      <div class="comparison-column">
+                                        <h6>Memoization (Top-Down)</h6>
+                                        <ul>
+                                          <li>Starts with the original problem</li>
+                                          <li>Uses recursion with a cache</li>
+                                          <li>Solves only necessary subproblems</li>
+                                          <li>Easier to implement for complex state transitions</li>
+                                          <li>May cause stack overflow for large inputs</li>
+                                        </ul>
+                                      </div>
+                                      <div class="comparison-column">
+                                        <h6>Tabulation (Bottom-Up)</h6>
+                                        <ul>
+                                          <li>Starts with the smallest subproblems</li>
+                                          <li>Uses iteration to fill a table</li>
+                                          <li>Solves all subproblems in order</li>
+                                          <li>Often more efficient (no recursive overhead)</li>
+                                          <li>Sometimes harder to implement</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    
+                                    <h5>Example: Fibonacci with Both Approaches</h5>
+                                    <div class="code-tabs">
+                                      <div class="code-tab-buttons">
+                                        <button class="code-tab-btn active" data-code="memoization">Memoization</button>
+                                        <button class="code-tab-btn" data-code="tabulation">Tabulation</button>
+                                      </div>
+                                      <div class="code-tab-content">
+                                        <div class="code-tab-pane active" id="memoization">
+                                          <div class="code-example">
+<pre><code class="language-cpp">// Top-down approach with memoization
+int fibonacci(int n, vector<int>& memo) {
+    // Base cases
+    if (n <= 1) return n;
+    
+    // Check if already computed
+    if (memo[n] != -1) return memo[n];
+    
+    // Compute and store result
+    memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+    return memo[n];
+}
 
-    <section id="resources" class="resources-section">
-        <div class="container">
-            <h2 class="section-title">Learning <span class="accent-text">Resources</span></h2>
-            <p class="section-description">Recommended books, websites, and tools to aid your learning</p>
-            
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Books</h3>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="#" class="resource-link">Introduction to Algorithms (CLRS)</a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">Algorithms by Robert Sedgewick</a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">C++ Primer by Stanley Lippman</a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">Competitive Programmer's Handbook</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Websites</h3>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="https://leetcode.com" target="_blank" class="resource-link">LeetCode</a>
-                        </li>
-                        <li>
-                            <a href="https://www.geeksforgeeks.org" target="_blank" class="resource-link">GeeksforGeeks</a>
-                        </li>
-                        <li>
-                            <a href="https://codeforces.com" target="_blank" class="resource-link">Codeforces</a>
-                        </li>
-                        <li>
-                            <a href="https://visualgo.net" target="_blank" class="resource-link">VisuAlgo</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Tools</h3>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="https://godbolt.org" target="_blank" class="resource-link">Compiler Explorer</a>
-                        </li>
-                        <li>
-                            <a href="https://cpp.sh" target="_blank" class="resource-link">C++ Shell</a>
-                        </li>
-                        <li>
-                            <a href="https://cppreference.com" target="_blank" class="resource-link">C++ Reference</a>
-                        </li>
-                        <li>
-                            <a href="https://visualgo.net" target="_blank" class="resource-link">Algorithm Visualizer</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Courses & Videos</h3>
-                    <ul class="resource-list">
-                        <li>
-                            <a href="#" class="resource-link">MIT OpenCourseWare: Algorithms</a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">Stanford Algorithms Specialization</a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">Errichto YouTube Channel</a>
-                        </li>
-                        <li>
-                            <a href="#" class="resource-link">William Fiset Graph Theory</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>C++ DSA Roadmap</h2>
-                    <p>A comprehensive guide to mastering Data Structures and Algorithms in C++</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Navigation</h3>
-                        <ul>
-                            <li><a href="#roadmap">Roadmap</a></li>
-                            <li><a href="#topics">Topics</a></li>
-                            <li><a href="#resources">Resources</a></li>
-                            <li><a href="#progress">Progress Tracker</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>External Links</h3>
-                        <ul>
-                            <li><a href="https://leetcode.com" target="_blank">LeetCode</a></li>
-                            <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                            <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
-                            <li><a href="https://cppreference.com" target="_blank">C++ Reference</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Created with ❤️ for C++ and DSA enthusiasts</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/prism.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+int fib(int n) {
+    if (n <= 1) return n;
+    vector<int> memo(n + 1, -1);
+    return fibonacci(n, memo);
+}</code></pre>
+                                          </div>
+                                        </div>
+                                        <div class="code-tab-pane" id="tabulation">
+                                          <div class="code-example">
+<pre><code class="language-cpp">// Bottom-up approach with tabulation
+int fibonacci(int n) {
+    // Base cases
+    if (n <= 1) return n;
+    
+    // Create and initialize DP table
+    vector<int> dp(n + 1);
+    dp[0] = 0;
+    dp[1] = 1;
+    
+    // Fill the table bottom-up
+    for (int i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    
+    return dp[n];
+}</code></pre>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>1D Dynamic Programming</h4>
+                                    <span class="lesson-duration">90 min</span>
+                                  </div>
+                                  <p>Master problems that use a one-dimensional DP array, including subsequence, subset, and optimization problems.</p>
+                                  
+                                  <div class="lesson-content">
+                                    <h5>Common 1D DP Problems</h5>
+                                    <div class="dp-problem-example">
+                                      <h6>Longest Increasing Subsequence (LIS)</h6>
+                                      <p>Find the length of the longest subsequence of a given array such that all elements are in increasing order.</p>
+                                      
+                                      <div class="problem-visualization">
+                                        <div class="array-visualization">
+                                          <div class="array-element">10</div>
+                                          <div class="array-element">9</div>
+                                          <div class="array-element">2</div>
+                                          <div class="array-element">5</div>
+                                          <div class="array-element">3</div>
+                                          <div class="array-element">7</div>
+                                          <div class="array-element">101</div>
+                                          <div class="array-element">18</div>
+                                        </div>
+                                        
+                                        <div class="dp-table-visualization">
+                                          <div class="dp-label">DP[i]:</div>
+                                          <div class="dp-element">1</div>
+                                          <div class="dp-element">1</div>
+                                          <div class="dp-element">1</div>
+                                          <div class="dp-element">2</div>
+                                          <div class="dp-element">2</div>
+                                          <div class="dp-element">3</div>
+                                          <div class="dp-element">4</div>
+                                          <div class="dp-element">4</div>
+                                        </div>
+                                        
+                                        <div class="result-visualization">
+                                          <div class="result-label">LIS = 4</div>
+                                          <div class="result-sequence">[2, 3, 7, 101] or [2, 3, 7, 18]</div>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="code-example">
+<pre><code class="language-cpp">int lengthOfLIS(vector<int>& nums) {
+    int n = nums.size();
+    if (n == 0) return 0;
+    
+    // dp[i] = length of LIS ending at index i
+    vector<int> dp(n, 1);
+    
+    // Fill dp table
+    for (int i = 1; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            if (nums[i] > nums[j]) {
+                dp[i] = max(dp[i], dp[j] + 1);
+            }
+        }
+    }
+    
+    // Find maximum value in dp table
+    return *max_element(dp.begin(), dp.end());
+}</code></pre>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>2D Dynamic Programming</h4>
+                                    <span class="lesson-duration">120 min</span>
+                                  </div>
+                                  <p>Explore problems that require a two-dimensional DP table, including grid-based problems and string operations.</p>
+                                  
+                                  <div class="lesson-content">
+                                    <h5>Common 2D DP Problems</h5>
+                                    <div class="dp-problem-example">
+                                      <h6>Longest Common Subsequence (LCS)</h6>
+                                      <p>Find the length of the longest subsequence present in two given strings.</p>
+                                      
+                                      <div class="lcs-visualization">
+                                        <div class="string-labels">
+                                          <div class="string-label">String 1:</div>
+                                          <div class="string-label">String 2:</div>
+                                        </div>
+                                        <div class="strings-container">
+                                          <div class="string-visualization">
+                                            <div class="char-element">A</div>
+                                            <div class="char-element">B</div>
+                                            <div class="char-element">C</div>
+                                            <div class="char-element">D</div>
+                                            <div class="char-element">E</div>
+                                          </div>
+                                          <div class="string-visualization">
+                                            <div class="char-element">A</div>
+                                            <div class="char-element">C</div>
+                                            <div class="char-element">E</div>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="dp-matrix-visualization">
+                                          <table class="dp-matrix">
+                                            <tr>
+                                              <td class="matrix-header"></td>
+                                              <td class="matrix-header"></td>
+                                              <td class="matrix-header">A</td>
+                                              <td class="matrix-header">C</td>
+                                              <td class="matrix-header">E</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="matrix-header"></td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">0</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="matrix-header">A</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell highlight">1</td>
+                                              <td class="matrix-cell">1</td>
+                                              <td class="matrix-cell">1</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="matrix-header">B</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">1</td>
+                                              <td class="matrix-cell">1</td>
+                                              <td class="matrix-cell">1</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="matrix-header">C</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">1</td>
+                                              <td class="matrix-cell highlight">2</td>
+                                              <td class="matrix-cell">2</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="matrix-header">D</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">1</td>
+                                              <td class="matrix-cell">2</td>
+                                              <td class="matrix-cell">2</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="matrix-header">E</td>
+                                              <td class="matrix-cell">0</td>
+                                              <td class="matrix-cell">1</td>
+                                              <td class="matrix-cell">2</td>
+                                              <td class="matrix-cell highlight">3</td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        
+                                        <div class="result-visualization">
+                                          <div class="result-label">LCS = 3</div>
+                                          <div class="result-sequence">The subsequence is "ACE"</div>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="code-example">
+<pre><code class="language-cpp">int longestCommonSubsequence(string text1, string text2) {
+    int m = text1.length();
+    int n = text2.length();
+    
+    // Create DP table
+    vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
+    
+    // Fill the DP table
+    for (int i = 1; i <= m; i++) {
+        for (int j = 1; j <= n; j++) {
+            if (text1[i - 1] == text2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1;
+            } else {
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    
+    return dp[m][n];
+}</code></pre>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="lesson-item">
+                                  <div class="lesson-header">
+                                    <h4>State Compression and Optimization</h4>
+                                    <span class="lesson-duration">60 min</span>
+                                  </div>
+                                  <p>Learn advanced techniques to optimize DP solutions by reducing space complexity and improving state transitions.</p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Practice tab -->
+                            <div class="tab-pane" id="tab-practice-8">
+                              <div class="practice-problems">
+                                <h4>LeetCode Problems</h4>
+                                <div class="difficulty-tabs">
+                                  <button class="difficulty-tab active" data-difficulty="easy">Easy</button>
+                                  <button class="difficulty-tab" data-difficulty="medium">Medium</button>
+                                  <button class="difficulty-tab" data-difficulty="hard">Hard</button>
+                                </div>
+                                
+                                <div class="difficulty-content active" id="easy-problems-dp">
+                                  <div class="problem-list">
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/climbing-stairs/" target="_blank">70. Climbing Stairs</a></h5>
+                                        <span class="difficulty easy">Easy</span>
+                                      </div>
+                                      <p>You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
+                                      <div class="problem-approach">
+                                        <h6>Approach:</h6>
+                                        <p>Use a 1D DP array where dp[i] represents the number of ways to reach step i.</p>
+                                        <div class="code-example">
+<pre><code class="language-cpp">int climbStairs(int n) {
+    if (n <= 2) return n;
+    
+    vector<int> dp(n + 1);
+    dp[1] = 1;
+    dp[2] = 2;
+    
+    for (int i = 3; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    
+    return dp[n];
+}</code></pre>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/min-cost-climbing-stairs/" target="_blank">746. Min Cost Climbing Stairs</a></h5>
+                                        <span class="difficulty easy">Easy</span>
+                                      </div>
+                                      <p>You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Once you pay the cost, you can either climb one or two steps. Find the minimum cost to reach the top of the floor.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="difficulty-content" id="medium-problems-dp">
+                                  <div class="problem-list">
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/coin-change/" target="_blank">322. Coin Change</a></h5>
+                                        <span class="difficulty medium">Medium</span>
+                                      </div>
+                                      <p>You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money. Return the fewest number of coins that you need to make up that amount.</p>
+                                      <div class="problem-approach">
+                                        <h6>Approach:</h6>
+                                        <p>Use a 1D DP array where dp[i] represents the minimum number of coins needed to make amount i.</p>
+                                        <div class="code-example">
+<pre><code class="language-cpp">int coinChange(vector<int>& coins, int amount) {
+    // Initialize with amount+1 (representing "infinity")
+    vector<int> dp(amount + 1, amount + 1);
+    dp[0] = 0;  // Base case: 0 coins needed to make 0 amount
+    
+    for (int i = 1; i <= amount; i++) {
+        for (int coin : coins) {
+            if (coin <= i) {
+                dp[i] = min(dp[i], dp[i - coin] + 1);
+            }
+        }
+    }
+    
+    return dp[amount] > amount ? -1 : dp[amount];
+}</code></pre>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/house-robber/" target="_blank">198. House Robber</a></h5>
+                                        <span class="difficulty medium">Medium</span>
+                                      </div>
+                                      <p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. You cannot rob adjacent houses. Find the maximum amount of money you can rob tonight without alerting the police.</p>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/longest-increasing-subsequence/" target="_blank">300. Longest Increasing Subsequence</a></h5>
+                                        <span class="difficulty medium">Medium</span>
+                                      </div>
+                                      <p>Given an integer array nums, return the length of the longest strictly increasing subsequence.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="difficulty-content" id="hard-problems-dp">
+                                  <div class="problem-list">
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/edit-distance/" target="_blank">72. Edit Distance</a></h5>
+                                        <span class="difficulty hard">Hard</span>
+                                      </div>
+                                      <p>Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. You have 3 operations: insert, delete, or replace a character.</p>
+                                    </div>
+                                    
+                                    <div class="problem-item">
+                                      <div class="problem-info">
+                                        <h5><a href="https://leetcode.com/problems/burst-balloons/" target="_blank">312. Burst Balloons</a></h5>
+                                        <span class="difficulty hard">Hard</span>
+                                      </div>
+                                      <p>You are given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it. You are asked to burst all the balloons. If you burst balloon i, you will get nums[i-1] * nums[i] * nums[i+1] coins. Find the maximum coins you can collect.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Resources tab -->
+                            <div class="tab-pane" id="tab-resources-8">
+                              <div class="resources-list">
+                                <div class="resource-item">
+                                  <h5>Dynamic Programming Patterns</h5>
+                                  <p>Comprehensive guide to common DP problem patterns</p>
+                                  <a href="https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns" target="_blank" class="resource-link">
+                                    Visit Resource <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                                </div>
+                                
+                                <div class="resource-item">
+                                  <h5>Errichto's Dynamic Programming Lectures</h5>
+                                  <p>In-depth video series on dynamic programming techniques</p>
+                                  <a href="https://www.youtube.com/watch?v=YBSt1jYwVfU&list=PLl0KD3g-oDOGJUdmhFk19LaPgrfmAGQfo" target="_blank" class="resource-link">
+                                    Visit Resource <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                                </div>
+                                
+                                <div class="resource-item">
+                                  <h5>MIT OpenCourseWare: Dynamic Programming</h5>
+                                  <p>Academic lectures covering DP theory and applications</p>
+                                  <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos
