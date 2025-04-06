@@ -49,3 +49,14 @@ A place to solve leetcode question with efficiency and with your companions
     <td>&#9989;</td>
   </tr>
 </table>
+
+
+Rules:
+for each question there will be 3 part
+1. Best time complexity
+2. best space complexity
+3. both average
+
+question saving format will be ./Participants/yourname/Q0001/time or space or average/code.type and pic
+
+forlder code gonna have the best of all participants

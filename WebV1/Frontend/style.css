@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #a6a6a6;
+}
+
+body {
+  background: #414141;
+}
+
+@media screen and (max-width: 600px) {
+  /* smartphones */
+  .navBar-Search {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+  /* tablets */
+  .navBar-Search {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* desktops */
+}
+
+.navBar {
+  width: 100%;
+  height: 40px;
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.navBar-Path,
+.navBar-Search,
+.navBar-Panel,
+.navBar-Logo {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.navBar-Search {
+  flex-grow: 1;
+  max-width: 400px;
+  height: 30px;
+  /* display: inline-block; */
+  /* margin-left: 30%; */
+  /* margin-top: 2px; */
+  background: #2d2d2d;
+  padding: 2.5px 10px;
+  /* padding-top: 5px;
+  padding-left: 6px; */
+  border-radius: 8px;
+  border: 1px solid #0cb21fcd;
+  position: relative;
+}
+
+.navBar-Search input[type="text"] {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.navBar-Search input[type="text"]:focus {
+  outline: none;
+}
+
+/* .navBar-Search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(#0cb21fcd, #11a540ca);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+} */
+.navBar-Panel {
+  /* display: inline-block;
+  position: fixed; */
+  /* right: 120px; */
+  margin-right: -20%;
+  /* top: 5px; */
+  font-size: 22px;
+}
+.navBar-Panel ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navBar-Panel ul li {
+  margin-right: 10px;
+}
+
+/* .navBar-Logo {
+  display: inline-block;
+  position: fixed;
+  right: 30px;
+  top: 7px;
+} */
+.navBar-Logo {
+  margin-right: 30px;
+  margin-top: 30px;
+}
